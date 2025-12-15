@@ -1,0 +1,9 @@
+GET - https://api.github.com/repos/cybershield360-dev/Cybershield360-rules/contents/ip-events.txt
+
+PUT - https://api.github.com/repos/cybershield360-dev/Cybershield360-rules/contents/ip-events.txt
+{
+  "message": "Commit from Logic App via HTTP action",
+  "content": @{base64(outputs('Append_Data_IP'))},
+  "sha": @{body('Parse_Github_GET_IP')?['sha']},
+  "branch": "main"
+}
