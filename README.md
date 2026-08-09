@@ -1,2 +1,2 @@
 # Cybershield360-rules
-Ruls for soc
+Rules for SOC
